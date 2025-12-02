@@ -4,6 +4,10 @@ import dotenv from "dotenv"
 dotenv.config();
 
 connectDB()
+.then
+.catch((error)=>{
+    console.log("ERROR")
+})
 
 
 
