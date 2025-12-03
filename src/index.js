@@ -1,13 +1,14 @@
-
 import connectDB from "./db/index.js";
-import dotenv from "dotenv"
+import dotenv from "dotenv";
 dotenv.config();
 
 connectDB()
-.then
-.catch((error)=>{
-    console.log("ERROR")
-})
+  .then(() => {
+    console.log("Database connected 🌱");
+  })
+  .catch((error) => {
+    console.log("Database connection failed:", error);
+  });
 
 
 
